@@ -1,0 +1,39 @@
+@forward 'variables';
+
+header{
+    background-color: $second-color;
+    width: 100%;
+    height: 20vh;
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Place sous le menu principal */
+    left: 0;
+    background: #f9f9f9;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+}

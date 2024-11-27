@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: $primary-font;
+}
+
+h1{
+    font-size: $mobile-title-size;
+}
+
+h2, h3{
+    font-size: $mobile-subtitle-size;
+}
+
+p{
+    font-size: $mobile-paragraph-size;
+}
+
+a, p, li, label{
+    font-family: $second-font;
+}
+
+@media(max-width : 900px){
+    h1{
+        font-size: $desktop-title-size;
+    }
+    
+    h2, h3{
+        font-size: $desktop-subtitle-size;
+    }
+    
+    p{
+        font-size: $desktop-paragraph-size;
+    }
+}
