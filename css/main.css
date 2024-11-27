@@ -1,1 +1,117 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(40, 35, 28);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cherry Bomb One";
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2, h3 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+a, p, li, label {
+  font-family: "Mukta";
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+header {
+  background-color: rgb(40, 35, 28);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+header img {
+  overflow: hidden;
+}
+header .menu {
+  padding: 10px;
+  font-family: "Cherry Bomb One";
+}
+header .menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+header .menu__item {
+  position: relative;
+}
+header .menu__item--has-children:hover .submenu {
+  display: block;
+}
+header .menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+header .menu__link:hover {
+  color: #655356;
+}
+header .submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: rgb(40, 35, 28);
+  border-radius: 10px;
+}
+header .submenu__item {
+  margin: 0;
+}
+header .submenu__item a {
+  padding: 10px 15px;
+  width: 200px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  color: #ffffff;
+}
+header .submenu__item a:hover {
+  background-color: #513B3C;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-image: linear-gradient(to bottom, rgb(40, 35, 28), rgba(40, 35, 28, 0.7)), url("/imgs/background_index.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=main.css.map */

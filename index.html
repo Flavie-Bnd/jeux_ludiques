@@ -16,28 +16,36 @@
 
 <body>
     <header>
-        <img src="/imgs/logo_ludibox.png" alt="Logo LudiBox" width="50px" height="50px" />
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li>
-                    <a href="#">Jeu en Solo</a>
+        <a href="index.html"><img src="/imgs/logo_ludibox.png" alt="Logo LudiBox" width="250" height="125" /></a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Accueil</a></li>
+                <li class="menu__item menu__item--has-children">
+                    <a href="#" class="menu__link">Jeu en Solo</a>
                     <ul class="submenu">
-                        <li><a href="sudoku.html">sudoku</a></li>
-                        <li><a href="solitaire.html">Solitaire</a></li>
+                        <li class="submenu__item"><a href="sudoku.html" class="submenu__link">Sudoku</a></li>
+                        <li class="submenu__item"><a href="solitaire.html" class="submenu__link">Solitaire</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">Jeu en Duo</a>
+                <li class="menu__item menu__item--has-children">
+                    <a href="#" class="menu__link">Jeu en Duo</a>
                     <ul class="submenu">
-                        <li><a href="morpion.html">Morpion</a></li>
-                    <li><a href="pfc.html">Pierre Feuille Ciseau</a></li>
+                        <li class="submenu__item"><a href="morpion.html" class="submenu__link">Morpion</a></li>
+                        <li class="submenu__item"><a href="pfc.html" class="submenu__link">Pierre Feuille Ciseau</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
             </ul>
         </nav>
+        
     </header>
+
+    <section id="hero">
+        <h1>Votre Arcade Virtuel à porté de click</h1>
+        <a href="#jeux">Découvrez tout nos minis jeux</a>
+        <a href="#enCours">En avant première, les jeux en cours de développement</a>
+    </section>
+
 </body>
 
 </html>

@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+@mixin click_button($fifth-color) {
+    background-color: $fifth-color;
+
+}
